@@ -1,0 +1,400 @@
+header {
+    padding: 80px 40px;
+    color: #FFFFFF;
+    background-color: #242d48;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+footer>img {
+    width: 220px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.link {
+    text-align: right;
+    padding: 15px 15px 0 0;
+    font-size: 14px;
+    background-color: #242d48;
+}
+
+.link>a:link,
+.link>a:visited,
+.link>a:hover,
+.link>a:active {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.title {
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    padding-top: 30px;
+    color: #e8e8e8;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.btn-box {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.setting-box-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s;
+}
+
+.setting-box-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.setting-box {
+    width: 80%;
+    min-width: 990px;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: transform .3s;
+    transform: scale(.8);
+}
+
+.setting-box-show>.setting-box {
+    transform: scale(1);
+}
+
+.setting-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.setting-header>svg {
+    cursor: pointer;
+}
+
+.setting-content {
+    padding: 20px;
+}
+
+.setting-box-img {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-box-form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 999;
+    padding-top: 20px;
+}
+
+.setting-box-left>div {
+    padding-bottom: 10px;
+}
+
+.setting-box-left>div>label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.setting-box-left>div>label>input {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+}
+
+.setting-box-left>div>input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+
+.choose-file,
+.choose-file-input {
+    display: none;
+}
+
+.choose-file-btn {
+    padding: 5px 10px;
+}
+
+.setting-box-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.list-box {
+    padding-bottom: 40px;
+    animation: listBoxShow .6s;
+}
+
+@keyframes listBoxShow {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list-box-hide {
+    display: none;
+}
+
+.list-name {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #b1b1b1;
+}
+
+.list {
+    padding-top: 40px;
+}
+
+.list>li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transform: scale(1) translateZ(0);
+}
+
+.list .preview-box {
+    position: relative;
+    width: 180px;
+    border-radius: 10px;
+    background-color: #2e2b32;
+    transition: box-shadow .3s, transform .3s;
+}
+
+.list .preview-box:hover {
+    box-shadow: 0 0 16px 0 #1a191c;
+    transform: scale(1.1) translateZ(0);
+}
+
+.list .preview-frame {
+    width: 100%;
+    padding: 30px;
+}
+
+.list .preview-location {
+    margin: 30px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+}
+
+.list .preview-img {
+    background-color: #141D21;
+}
+
+.preview-box {
+    position: relative;
+    font-size: 0;
+    background-color: transparent;
+    transition: background-color .4s;
+}
+
+.preview-frame {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    padding: 40px;
+}
+
+.preview-location {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    margin: 40px;
+}
+
+.preview-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: background .4s;
+}
+
+.preview-frame-popup {
+    width: auto;
+    height: 450px;
+    transform-origin: center;
+}
+
+.color-block {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+select {
+    padding: 4px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .list {
+        text-align: center;
+    }
+
+    .list .preview-box {
+        width: 100% !important;
+    }
+
+    .setting-box-cover {
+        padding: 20px;
+    }
+
+    .setting-box {
+        width: 100%;
+        min-width: auto;
+        min-height: auto;
+    }
+}
+
+.sort-list {
+    display: inline-block;
+    font-size: 0;
+    /* border: 3px solid #2c2732; */
+    color: #909090;
+    overflow: hidden;
+}
+
+.sort-list>li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-list>.sort-selected {
+    color: #fff;
+    background-color: #2c407d;
+}
+
+.loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    animation: loadingShow 0.4s;
+}
+
+@keyframes loadingShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    header {
+        padding: 80px 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .setting-box-cover {
+        transform: translateY(100%);
+        visibility: visible;
+        opacity: 0;
+        transition: transform .3s, opacity .3s;
+    }
+
+    .setting-box-show {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .setting-box {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .preview-frame-popup {
+        width: 100%;
+        height: auto;
+    }
+
+    .sort-list>li {
+        display: block;
+    }
+}

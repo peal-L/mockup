@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>mockup工具</title>
+    <meta name="Keywords" Content="mockup,截图合成,设备模型">
+    <meta name="Description" Content="多达50+种设备模型的mockup工具，可以给你的截图加上设备模型边框">
+</head>
+
+<body>
+
+    <p class="link"><a target="_blank" href="https://github.com/peal-L/mockup">>_ GitHub </a></p>
+    <header>
+        <p class="title">mockup工具</p>
+        <p class="description">多达50+种设备模型的mockup工具，可以给你的截图加上设备模型边框</p>
+        <div class="btn-box">
+            <button class="btn upload">上传图片</button>
+            <input class="choose-file" type="file">
+        </div>
+    </header>
+    <div class="setting-box-cover">
+        <div class="setting-box">
+            <div class="setting-header">
+                <span>测试</span>
+                <svg class="setting-close" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="6466" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="25" height="25">
+                    <defs>
+                        <style type="text/css"></style>
+                    </defs>
+                    <path d="M806.4 172.8l-633.6 633.6c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 32 12.8 44.8 0l633.6-633.6c12.8-12.8 12.8-32 0-44.8-12.8-12.8-32-12.8-44.8 0z"
+                          fill="#ababab" p-id="6467"></path>
+                    <path d="M172.8 172.8c-12.8 12.8-12.8 32 0 44.8l633.6 633.6c12.8 12.8 32 12.8 44.8 0 12.8-12.8 12.8-32 0-44.8L217.6 172.8c-12.8-12.8-32-12.8-44.8 0z"
+                          fill="#ababab" p-id="6468"></path>
+                </svg>
+            </div>
+            <div class="setting-content">
+
+                <div class="setting-box-img">
+                    <div class="preview-box">
+                        <img class="preview-frame preview-frame-popup" src="" alt="">
+                        <div class="preview-location">
+                            <div class="preview-img preview-img-popup"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting-box-form">
+                    <div class="setting-box-left">
+                        <div>
+                            <label>上传图片：</label>
+                            <input class="choose-file-input" type="file">
+                            <button class="btn btn-blue choose-file-btn">选择照片</button>
+                        </div>
+                        <div>
+                            <label>设备旋转：</label>
+                            <select name="img-rotate" id="">
+                                <option value="0">默认</option>
+                                <option value="1">-90°</option>
+                                <option value="2">90°</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>设备颜色：</label>
+                            <select name="img-color"></select>
+                        </div>
+                        <div>
+                            <label>图片大小：</label>
+                            <label><input type="radio" name="img-size" data-val="100% auto" checked>自适应宽</label>
+                            <label><input type="radio" name="img-size" data-val="auto 100%">自适应高</label>
+                            <label><input type="radio" name="img-size" data-val="100% 100%">自适应屏幕</label>
+                            <label><input type="radio" name="img-size" data-val="auto">原大小</label>
+                        </div>
+                        <div>
+                            <label>横向位置：</label>
+                            <label><input type="radio" name="img-position-x" data-val="left" checked>左</label>
+                            <label><input type="radio" name="img-position-x" data-val="center">中</label>
+                            <label><input type="radio" name="img-position-x" data-val="right">右</label>
+                        </div>
+                        <div>
+                            <label>竖向位置：</label>
+                            <label><input type="radio" name="img-position-y" data-val="top" checked>上</label>
+                            <label><input type="radio" name="img-position-y" data-val="center">中</label>
+                            <label><input type="radio" name="img-position-y" data-val="bottom">下</label>
+                        </div>
+                        <div>
+                            <label>背景色：</label>
+                            <input class="img-color-outer" type="text" name="" id="">
+                            <div class="color-block color-block-outer"></div>
+                        </div>
+                        <div>
+                            <label>填充色：</label>
+                            <input class="img-color-inner" type="text" name="" id="">
+                            <div class="color-block color-block-inner"></div>
+                        </div>
+                    </div>
+
+                    <div class="setting-box-right">
+                        <button class="btn save">保存到本地</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content"></div>
+
+    <!-- <footer>
+        <img src="../static/qrcode.jpg" alt="">
+    </footer> -->
+
+</body>
+
+</html>
